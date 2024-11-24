@@ -13,8 +13,7 @@ html, body {
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    overflow-x: hidden; /* Ngăn cuộn ngang */
-}
+    overflow-x: hidden; }
 
 header {
     background-color: #333;
