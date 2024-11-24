@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Ngăn cuộn ngang */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.saved-books {
+    text-align: center;
+}
+
+.saved-books h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.saved-books p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.book-card {
+    background-color: white;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+@keyframes zoomImage {
+    0% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.1); 
+    }
+    100% {
+        transform: scale(1); 
+}
+}
+
+.book-card:hover {
+    transform: scale(1.05); 
+}
+
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.book-card:hover img {
+    animation: zoomImage 0.6s ease-in-out; 
+}
+
+.book-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.book-card p {
+    font-size: 16px;
+    color: #666;
+}
+
+.book-card a {
+    text-decoration: none;
+    color: #d9534f;
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+.book-card a:hover {
+    color: #c9302c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
